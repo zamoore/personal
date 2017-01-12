@@ -1,0 +1,27 @@
+// Font size variables
+$font_xs: 10px;
+$font_small: 12px;
+$font_book: 16px;
+$font_large: 20px;
+$font_xlarge: 26px;
+
+// Font weight variables
+$font_weight_book: 300;
+$font_weight_bold: 400;
+
+// Global typography
+html {
+  font-family: "Roboto", sans-serif;
+  font-weight: $font_weight_book;
+  font-size: $font_book;
+}
+
+h1, h2, h3 {
+  font-size: $font_xlarge;
+  font-weight: $font_weight_bold;
+}
+
+h4, h5, h6 {
+  font-size: $font_large;
+  font-weight: $font_weight_bold;
+}

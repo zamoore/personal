@@ -1,0 +1,16 @@
+// Color variables
+$primary_color: #FFC107;
+$secondary_color: #FFC107;
+
+$dark_bg_color: #3a4250;
+$light_bg_color: #fefefe;
+$neutral_bg_color: #f6f6f6;
+
+$light_text_color: #efefef;
+$text_color: #ffffff;
+
+// Global color settings
+html {
+  background-color: $neutral_bg_color;
+  color: $text_color;
+}

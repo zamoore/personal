@@ -1,0 +1,30 @@
+<header class="layout-header">
+  <div class="header-content-container">
+    <img src="images/avatar.png" class="avatar" />
+  </div>
+</header>
+<nav class="layout-nav">
+  <div class="layout-content-container">
+    <ul class="navigation-list">
+      <li class="navigation-item">
+        {{#link-to 'index' class='navigation-link'}}Posts{{/link-to}}
+      </li>
+      <li class="navigation-item">
+        {{#link-to 'about' class='navigation-link'}}About{{/link-to}}
+      </li>
+      <li class="navigation-item">
+        {{#link-to 'index' class='navigation-link'}}Contact{{/link-to}}
+      </li>
+      <li class="navigation-item">
+        {{#link-to 'index' class='navigation-link'}}
+          {{fa-icon 'download'}}
+          <span>Résumé</span>
+        {{/link-to}}
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="layout-content-container">
+  {{outlet}}
+</div>

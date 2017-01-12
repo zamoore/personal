@@ -1,0 +1,61 @@
+// Layout variables
+$header_height: 180px;
+$header_content_width: 600px;
+$header_content_height: 120px;
+
+$nav_height: 60px;
+$nav_font_size: $font_book;
+
+$container_width: 800px;
+
+// Global
+.layout-content-container {
+  margin: 0 auto;
+  max-width: $container_width;
+}
+
+// Header
+.layout-header {
+  background-color: $primary_color;
+  height: $header_height;
+  padding: #{($header_height - $header_content_height) / 2} $spacing_large;
+
+  .header-content-container {
+    @include clearfix;
+
+    height: $header_content_height;
+    width: $header_content_width;
+    margin: 0 auto;
+  }
+  .avatar {
+    border-radius: 50%;
+    height: 100px;
+  }
+}
+
+// Navigation
+.layout-nav {
+  background-color: $dark_bg_color;
+  height: $nav_height;
+  margin-bottom: $spacing_standard;
+
+  .navigation-item {
+    float: left;
+    width: 25%;
+  }
+  .navigation-link {
+    color: $light_text_color;
+    display: block;
+    letter-spacing: 2px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s;
+    padding: #{($nav_height - $nav_font_size) / 2} $spacing_large;
+
+    &:hover,
+    &.active {
+      color: $secondary_color;
+    }
+  }
+}
