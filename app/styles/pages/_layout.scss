@@ -1,9 +1,9 @@
 // Layout variables
-$header_height: 180px;
-$header_content_width: 600px;
-$header_content_height: 120px;
+$header_height: 150px;
+$header_content_width: 670px;
+$header_content_height: 100px;
 
-$nav_height: 60px;
+$nav_height: 50px;
 $nav_font_size: $font_book;
 
 $container_width: 800px;
@@ -29,7 +29,21 @@ $container_width: 800px;
   }
   .avatar {
     border-radius: 50%;
-    height: 100px;
+    float: left;
+    height: $header_content_height;
+    margin-right: $spacing_standard;
+  }
+  .hero-text {
+    @include vertical-align;
+
+    float: left;
+
+    .introduction {
+      margin-bottom: $spacing_small;
+    }
+    .description {
+
+    }
   }
 }
 
@@ -46,6 +60,7 @@ $container_width: 800px;
   .navigation-link {
     color: $light_text_color;
     display: block;
+    font-size: $nav_font_size;
     letter-spacing: 2px;
     text-align: center;
     text-decoration: none;
@@ -58,4 +73,12 @@ $container_width: 800px;
       color: $secondary_color;
     }
   }
+}
+
+// Footer
+.footer {
+  color: $secondary_text_color;
+  font-size: $font_small;
+  margin: $spacing_xl 0;
+  text-align: center;
 }

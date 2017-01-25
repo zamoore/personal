@@ -4,12 +4,14 @@
 @import "base/reset";
 
 // Theme
-@import "theme/typography";
+@import "theme/borders";
 @import "theme/colors";
+@import "theme/typography";
 @import "theme/spacing";
 
 // Partials
 @import "partials/card";
+@import "partials/page_header";
 
 // Pages
 @import "pages/layout";

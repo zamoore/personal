@@ -25,3 +25,22 @@ h4, h5, h6 {
   font-size: $font_large;
   font-weight: $font_weight_bold;
 }
+
+p {
+  font-weight: $font_weight_book;
+}
+
+a {
+  color: $text_color;
+  font-weight: $font_weight_book;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// Modifier classes
+.strong {
+  font-weight: $font_weight_bold;
+}
