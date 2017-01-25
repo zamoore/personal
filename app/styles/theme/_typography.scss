@@ -26,10 +26,6 @@ h4, h5, h6 {
   font-weight: $font_weight_bold;
 }
 
-p {
-  font-weight: $font_weight_book;
-}
-
 a {
   color: $text_color;
   font-weight: $font_weight_book;
@@ -38,6 +34,24 @@ a {
   &:hover {
     text-decoration: underline;
   }
+}
+
+p {
+  font-weight: $font_weight_book;
+  line-height: 2em;
+  margin-bottom: $spacing_large;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  a {
+    font-weight: $font_weight_bold;
+  }
+}
+
+strong {
+  font-weight: $font_weight_bold;
 }
 
 // Modifier classes

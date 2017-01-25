@@ -1,5 +1,5 @@
 // Layout variables
-$header_height: 150px;
+$header_height: 180px;
 $header_content_width: 670px;
 $header_content_height: 100px;
 
@@ -51,7 +51,7 @@ $container_width: 800px;
 .layout-nav {
   background-color: $dark_bg_color;
   height: $nav_height;
-  margin-bottom: $spacing_standard;
+  margin-bottom: $spacing_large;
 
   .navigation-item {
     float: left;

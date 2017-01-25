@@ -6,8 +6,8 @@
 // Theme
 @import "theme/borders";
 @import "theme/colors";
-@import "theme/typography";
 @import "theme/spacing";
+@import "theme/typography";
 
 // Partials
 @import "partials/card";
@@ -15,3 +15,4 @@
 
 // Pages
 @import "pages/layout";
+@import "pages/contact";
