@@ -12,6 +12,7 @@ $container_width: 800px;
 .layout-content-container {
   margin: 0 auto;
   max-width: $container_width;
+  padding: 0 $spacing_large;
 }
 
 // Header
@@ -41,8 +42,21 @@ $container_width: 800px;
     .introduction {
       margin-bottom: $spacing_small;
     }
-    .description {
+  }
 
+  @media screen and (max-width: 680px) {
+    .header-content-container {
+      width: auto;
+    }
+
+    .avatar {
+      display: block;
+      float: none;
+      margin: 0 auto;
+    }
+
+    .hero-text {
+      display: none;
     }
   }
 }
@@ -71,6 +85,15 @@ $container_width: 800px;
     &:hover,
     &.active {
       color: $secondary_color;
+    }
+  }
+
+  @media screen and (max-width: 680px) {
+    height: auto;
+
+    .navigation-item {
+      float: none;
+      width: 100%;
     }
   }
 }
