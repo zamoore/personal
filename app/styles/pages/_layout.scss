@@ -37,8 +37,6 @@ $container_width: 800px;
   .hero-text {
     @include vertical-align;
 
-    float: left;
-
     .introduction {
       margin-bottom: $spacing_small;
     }
