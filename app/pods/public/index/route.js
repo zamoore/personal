@@ -3,7 +3,7 @@ import Ember from 'ember';
 const { Route } = Ember;
 
 export default Route.extend({
-  beforeModel() {
-    this.transitionTo('public.about');
+  model() {
+    return this.get('store').findAll('post');
   }
 });
