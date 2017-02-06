@@ -7,7 +7,11 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('contact');
+  this.route('admin');
+  this.route('public', { path: '/' }, function() {
+    this.route('about');
+    this.route('contact');
+  });
 });
 
 export default Router;
