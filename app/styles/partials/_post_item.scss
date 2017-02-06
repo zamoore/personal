@@ -1,0 +1,10 @@
+.post-item {
+  border-bottom: 1px solid #efefef;
+  margin-bottom: $spacing_standard;
+  padding-bottom: $spacing_standard;
+
+  &:last-of-type {
+    border-bottom: 0;
+    margin-bottom: 0;
+  }
+}
