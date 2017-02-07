@@ -1,25 +1,17 @@
 .about-page {
 
   .contact-list {
-    border-bottom: 1px solid $lines_gray;
     display: flex;
-    margin-bottom: $spacing_large;
-    padding-bottom: $spacing_large;
 
     li {
       flex-grow: 1;
       text-align: center;
-
-      &:last-of-type {
-        margin-right: 0;
-      }
+    }
+    a {
+      color: inherit;
     }
     i {
       margin-right: $spacing_tiny;
     }
-  }
-  .about-me-copy {
-
-
   }
 }

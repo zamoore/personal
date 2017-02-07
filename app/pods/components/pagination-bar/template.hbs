@@ -1,0 +1,19 @@
+<ul class="pages-list">
+  <li class="page-item">
+    <button type="button" class="page-change-button" {{action 'changePage' previousPage}} disabled={{eq 1 currentPage}}>
+      {{fa-icon 'chevron-left'}}
+    </button>
+  </li>
+  {{#each pagesArray as |page|}}
+    <li class="page-item">
+      <button type="button" class="page-change-button {{if (eq page currentPage) 'active'}}" {{action 'changePage' page}}>
+        {{page}}
+      </button>
+    </li>
+  {{/each}}
+  <li class="page-item">
+    <button type="button" class="page-change-button" {{action 'changePage' nextPage}} disabled={{eq pages currentPage}}>
+      {{fa-icon 'chevron-right'}}
+    </button>
+  </li>
+</ul>

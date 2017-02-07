@@ -1,0 +1,29 @@
+.posts-page {
+  .posts-list {
+
+  }
+  .post-item {
+    border-bottom: 1px solid $lines_gray;
+    margin-bottom: $spacing_standard;
+    padding-bottom: $spacing_standard;
+
+    .post-header {
+      @include clearfix;
+
+      .title {
+        float: left;
+        font-size: $font_large;
+      }
+      .published-date {
+        float: right;
+      }
+    }
+    &:last-of-type {
+      border-bottom: 0;
+      margin-bottom: 0;
+    }
+    &:only-of-type {
+      padding-bottom: 0;
+    }
+  }
+}

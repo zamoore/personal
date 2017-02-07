@@ -6,8 +6,17 @@
   padding: $spacing_large $spacing_xl;
 }
 
-.card-with-header {
+.bar-card {
   @extend .card;
 
   padding: 0;
+
+  .bar-card-bar {
+    background-color: $dark_bg_color;
+    color: $light_text_color;
+    padding: $spacing_large $spacing_xl;
+  }
+  .bar-card-body {
+    padding: $spacing_large $spacing_xl;
+  }
 }

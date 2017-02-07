@@ -1,0 +1,34 @@
+.pagination-bar {
+  text-align: center;
+
+  .page-item {
+    display: inline-block;
+  }
+  .page-change-button {
+    background: none;
+    border: none;
+    color: $light_text_color;
+    cursor: pointer;
+    font-size: $font_book;
+    margin-right: $spacing_tiny;
+    opacity: 0.5;
+    padding: 0 $spacing_tiny;
+    transition: all 0.5s;
+
+    &:hover {
+      opacity: 1;
+    }
+    &:disabled {
+      cursor: not-allowed;
+      opacity: 0.15;
+    }
+    &:focus,
+    &:active {
+      outline: none;
+    }
+    &.active {
+      font-weight: $font_weight_bold;
+      opacity: 1;
+    }
+  }
+}

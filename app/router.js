@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('public', { path: '/' }, function() {
     this.route('about');
     this.route('contact');
+    this.route('post', { path: 'posts/:post_id' })
   });
 });
 

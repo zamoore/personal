@@ -1,0 +1,13 @@
+<article>
+  <header class="post-header">
+    <h3 class="title">{{post.title}}</h3>
+    <span class="published-date">{{moment-format post.publishedOn 'MMM D, YYYY'}}</span>
+  </header>
+  {{#if post.tags}}
+    <ul class="post-tags-list">
+      {{#each post.tags as |tag|}}
+        <li>{{tag}}</li>
+      {{/each}}
+    </ul>
+  {{/if}}
+</article>

@@ -1,7 +1,20 @@
-<h2 class="page-header">Posts</h2>
+<section class="posts-page">
+  <h2 class="page-header">Posts</h2>
 
-<ul>
-  {{#each model as |post|}}
-    <li>{{post.title}}</li>
-  {{/each}}
-</ul>
+  <div class="bar-card">
+    <div class="bar-card-body">
+      <ul class="posts-list">
+        {{#each model as |post|}}
+          {{post-item post=post}}
+        {{/each}}
+      </ul>
+    </div>
+    {{#if (gt model.meta.total 10)}}
+      {{pagination-bar
+        total=model.meta.total
+        currentPage=page
+        perPage=perPage
+        onPageChange=(action 'changePage')}}
+    {{/if}}
+  </div>
+</section>
