@@ -1,0 +1,13 @@
+<h2 class="page-header">Sign In</h2>
+
+<form>
+  <div class="field-container" {{action 'authenticate' on='submit'}}>
+    <label>Email</label>
+    {{input value=email}}
+  </div>
+  <div class="field-container">
+    <label>Password</label>
+    {{input value=password}}
+  </div>
+  <button type="submit">Sign in</button>
+</form>
