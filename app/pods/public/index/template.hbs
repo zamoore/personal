@@ -18,3 +18,8 @@
     {{/if}}
   </div>
 </section>
+
+<form {{action 'createPost' on='submit'}}>
+  {{input value=title}}
+  <button type="submit">Submit</button>
+</form>

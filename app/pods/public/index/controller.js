@@ -10,6 +10,16 @@ export default Controller.extend({
   actions: {
     changePage(page) {
       this.set('page', page);
+    },
+    createPost() {
+      let newPost = this.get('store').createRecord('post', {
+        title: this.get('title'),
+        body: 'This is a test'
+      });
+
+      newPost.save().then((post) => {
+        console.log(post);
+      });
     }
   }
 });

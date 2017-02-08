@@ -1,6 +1,8 @@
 <article>
   <header class="post-header">
-    <h3 class="title">{{post.title}}</h3>
+    {{#link-to 'public.post' post.slug}}
+      <h3 class="title">{{post.title}}</h3>
+    {{/link-to}}
     <span class="published-date">{{moment-format post.publishedOn 'MMM D, YYYY'}}</span>
   </header>
   {{#if post.tags}}
