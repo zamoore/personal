@@ -9,6 +9,7 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('admin', function() {
     this.route('sign-in');
+    this.route('create-post');
   });
   this.route('public', { path: '/' }, function() {
     this.route('about');

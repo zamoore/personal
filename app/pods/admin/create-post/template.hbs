@@ -1,0 +1,9 @@
+<h2 class="page-header">New post</h2>
+
+<form {{action 'createPost' on='submit'}} class="form">
+  <div class="field-container">
+    <label>Title</label>
+    {{input value=title}}
+  </div>
+  <button type="submit">Submit</button>
+</form>

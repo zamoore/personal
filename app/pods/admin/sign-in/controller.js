@@ -7,13 +7,17 @@ export default Controller.extend({
   session: inject.service(),
 
   // Controller properties
-  email: null,
+  identification: null,
   password: null,
 
   // Controller actions
   actions: {
     authenticate() {
+      let credentials = this.getProperties('identification', 'password');
 
+      this.get('session').authenticate('authenticator:jwt', credentials).then(() => {
+        this.get('notifications').success('Signed in successfully!')
+      });
     }
   }
 });
