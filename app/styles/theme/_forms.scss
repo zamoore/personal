@@ -1,0 +1,48 @@
+.form {
+  .form-header {
+    font-size: $font_large;
+    margin-bottom: $spacing_large;
+  }
+  .field-container {
+    margin-bottom: $spacing_standard;
+
+    label {
+      display: block;
+      font-weight: $font_weight_bold;
+      margin-bottom: $spacing_xs;
+    }
+    input {
+      border: 0;
+      border-bottom: 1px solid $lines_gray;
+      color: $text_color;
+      font-size: $font_book;
+      font-weight: $font_weight_book;
+      padding-bottom: 5px;
+      width: 100%;
+
+      &:focus {
+        outline: none;
+      }
+    }
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+  .form-actions-container {
+    text-align: right;
+
+    button {
+      background: none;
+      border: 1px solid $lines_gray;
+      border-radius: 15px;
+      cursor: pointer;
+      color: $text_color;
+      padding: $spacing_xs $spacing_standard;
+      font-size: $font_book;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}

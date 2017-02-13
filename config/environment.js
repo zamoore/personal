@@ -25,12 +25,15 @@ module.exports = function(environment) {
   };
 
   ENV['ember-simple-auth'] = {
-    authorizer: 'authorizer:token'
+    authorizer: 'authorizer:token',
+    authenticationRoute: 'admin.sign-in',
+    routeIfAlreadyAuthenticated: 'admin.index'
   };
   ENV['ember-simple-auth-token'] = {
     identificationField: 'email',
     serverTokenEndpoint: 'http://localhost:3333/api/auth'
   };
+  ENV['ember-cli-notifications'] = {};
 
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;

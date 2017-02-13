@@ -14,9 +14,13 @@ export default Controller.extend({
   actions: {
     authenticate() {
       let credentials = this.getProperties('identification', 'password');
+      let notifications = this.get('notifications');
 
       this.get('session').authenticate('authenticator:jwt', credentials).then(() => {
-        this.get('notifications').success('Signed in successfully!')
+        notifications.clearAll();
+        notifications.success('Signed in successfully!', { autoClear: true });
+      }).catch(() => {
+        notifications.error('Invalid email adress or password.', { autoClear: true });
       });
     }
   }

@@ -1,0 +1,19 @@
+.admin-wrapper {
+  .admin-header {
+    @include clearfix;
+
+    background-color: $primary_admin_color;
+    color: $light_text_color;
+    padding: $spacing_standard $spacing_large;
+
+    .branding {
+      float: left;
+    }
+    .auth-container {
+      float: right;
+    }
+  }
+  .admin-content-container {
+    padding: $spacing_large;
+  }
+}

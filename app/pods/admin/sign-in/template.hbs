@@ -1,13 +1,17 @@
-<h2 class="page-header">Sign In</h2>
+<div class="sign-in-page">
+  <form {{action 'authenticate' on='submit'}} class="sign-in-form form card">
+    <h2 class="form-header">Sign In</h2>
 
-<form {{action 'authenticate' on='submit'}}>
-  <div class="field-container">
-    <label>Email</label>
-    {{input value=identification}}
-  </div>
-  <div class="field-container">
-    <label>Password</label>
-    {{input value=password}}
-  </div>
-  <button type="submit">Sign in</button>
-</form>
+    <div class="field-container">
+      <label>Email</label>
+      {{input value=identification placeholder='Enter your email'}}
+    </div>
+    <div class="field-container">
+      <label>Password</label>
+      {{input value=password placeholder='Enter your password'}}
+    </div>
+    <div class="form-actions-container">
+      <button type="submit" class="form-action">Sign In</button>
+    </div>
+  </form>
+</div>

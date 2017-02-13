@@ -1,6 +1,19 @@
-<h1>Admin</h1>
-<h2>{{session.isAuthenticated}}</h2>
+<div class="admin-wrapper">
+  <header class="admin-header">
+    <h1 class="branding">Admin</h1>
+    <div class="auth-container">
+      {{#if session.isAuthenticated}}
+        <p>{{currentUser.user.email}}</p>
+        <button type="button" {{action 'signOut'}}>Sign out</button>
+      {{else}}
+        {{#link-to 'admin.sign-in'}}Sign in{{/link-to}}
+      {{/if}}
+    </div>
+  </header>
 
-{{outlet}}
+  <section class="admin-content-container">
+    {{outlet}}
+  </section>
 
-{{notification-container position='bottom-right'}}
+  {{notification-container position='bottom-right'}}
+</div>

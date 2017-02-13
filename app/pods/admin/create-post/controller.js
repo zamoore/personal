@@ -16,10 +16,10 @@ export default Controller.extend({
       });
 
       newPost.save().then(() => {
-        this.get('notifications').success('Post created successfully!');
+        notify.success('Post created successfully!', { autoClear: true });
       }).catch((reason) => {
         reason.errors.forEach((error) => {
-          notify.error(error.detail);
+          notify.error(error.detail, { autoClear: true });
         });
       });
     }

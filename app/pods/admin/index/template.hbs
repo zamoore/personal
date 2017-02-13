@@ -1,0 +1,16 @@
+Welcome to admin
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each model as |post|}}
+      <tr>
+        <td>{{post.title}}</td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
