@@ -8,7 +8,7 @@ export function initialize(applicationInstance) {
   session.on('invalidationSucceeded', function() {
     applicationRoute.transitionTo('admin.sign-in');
   });
-};
+}
 
 export default {
   initialize,

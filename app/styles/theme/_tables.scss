@@ -1,0 +1,23 @@
+.table {
+  border: 1px solid $lines_gray;
+  width: 100%;
+
+  th, td {
+    padding: $spacing_small $spacing_standard;
+    text-align: left;
+  }
+  thead {
+    background-color: $dark_bg_color;
+    color: $light_text_color;
+  }
+  tbody {
+    background-color: $light_bg_color;
+  }
+  tr {
+    border-bottom: 1px solid $lines_gray;
+
+    &:last-of-type {
+      border-bottom: 0;
+    }
+  }
+}

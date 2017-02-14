@@ -42,7 +42,8 @@ p {
   line-height: 2em;
   margin-bottom: $spacing_large;
 
-  &:last-of-type {
+  &:last-of-type,
+  &:only-of-type {
     margin-bottom: 0;
   }
 

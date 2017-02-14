@@ -31,7 +31,7 @@ module.exports = function(environment) {
   };
   ENV['ember-simple-auth-token'] = {
     identificationField: 'email',
-    serverTokenEndpoint: 'http://localhost:3333/api/auth'
+    serverTokenEndpoint: 'https://zamoore-blog.herokuapp.com/api/auth'
   };
   ENV['ember-cli-notifications'] = {};
 
@@ -55,7 +55,9 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    // Do stuff
+    ENV.googleAnalytics = {
+      webPropertyId: 'UA-91896817-1'
+    };
   }
 
   return ENV;

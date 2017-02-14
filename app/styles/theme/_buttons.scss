@@ -1,0 +1,24 @@
+.button {
+  background: none;
+  border: 1px solid $lines_gray;
+  border-radius: 5px;
+  cursor: pointer;
+  color: $text_color;
+  padding: $spacing_xs $spacing_standard;
+  font-size: $font_book;
+
+  &:focus {
+    outline: none;
+  }
+}
+.icon-button {
+  background: none;
+  border: none;
+  color: $text_color;
+  cursor: pointer;
+  font-size: $font_book;
+
+  &:focus {
+    outline: none;
+  }
+}

@@ -1,0 +1,18 @@
+<div class="invalid-tokens-page">
+  <ul class="invalid-tokens-list">
+    {{#each model as |token|}}
+      <li class="invalid-token-item">
+        <p class="token-string">
+          {{#copy-button clipboardText=token.token class='icon-button'}}
+            {{fa-icon 'clipboard'}}
+          {{/copy-button}}
+          {{token.token}}
+        </p>
+        <p>Expires {{moment-from-now token.expiresAt}}</p>
+      </li>
+    {{/each}}
+  </ul>
+  <button type="button" class="button" {{action 'deleteExpiredInvalidTokens'}}>
+    Delete Expired Tokens
+  </button>
+</div>

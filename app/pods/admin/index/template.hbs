@@ -1,16 +1,16 @@
-Welcome to admin
+<div class="google-analytics-metrics">
+  Google Analytics
+</div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-    </tr>
-  </thead>
-  <tbody>
-    {{#each model as |post|}}
-      <tr>
-        <td>{{post.title}}</td>
-      </tr>
-    {{/each}}
-  </tbody>
-</table>
+<div class="tabs-container">
+  <ul class="tabs-list">
+    <li class="tab-item">
+      {{#link-to 'admin.index.invalidated-tokens'}}
+        Invalidated Tokens
+      {{/link-to}}
+    </li>
+  </ul>
+  <div class="tab-contents">
+    {{outlet}}
+  </div>
+</div>
